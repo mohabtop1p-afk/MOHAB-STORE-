@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>روابط المتجر | تواصل معنا</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* إعدادات عامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            /* خلفية ناعمة وحديثة بألوان متدرجة */
+            background: linear-gradient(135deg, #f5f3ff 0%, #fdf2f8 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        /* اللوجو */
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #fff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .store-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .store-desc {
+            font-size: 15px;
+            color: #718096;
+            margin-bottom: 30px;
+        }
+
+        /* حاوية الأزرار بنظام الشبكة */
+        .links-grid {
+            display: grid;
+            gap: 15px;
+            grid-template-columns: 1fr; /* عمود واحد ليناسب الهواتف، يمكن تعديله لاحقاً */
+        }
+
+        /* تصميم الأزرار (البطاقات) */
+        .link-card {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            background: #ffffff;
+            border-radius: 16px;
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            border-color: #cbd5e0;
+        }
+
+        /* ألوان الأيقونات والتأثيرات حسب المنصة */
+        .icon-box {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px; /* المسافة من اليمين لأن الاتجاه RTL */
+            font-size: 24px;
+            color: white;
+        }
+
+        .whatsapp-channel .icon-box {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+        }
+
+        .whatsapp-direct .icon-box {
+            background: linear-gradient(45deg, #128C7E, #075E54);
+        }
+
+        .facebook-post .icon-box {
+            background: linear-gradient(45deg, #1877F2, #0C5EBF);
+        }
+
+        .link-text {
+            flex-grow: 1;
+            text-align: right;
+        }
+
+        .link-subtext {
+            display: block;
+            font-size: 12px;
+            color: #a0aec0;
+            font-weight: 400;
+            margin-top: 2px;
+        }
+
+        /* السهم الجانبي */
+        .fa-chevron-left {
+            color: #cbd5e0;
+            font-size: 14px;
+            transition: transform 0.3s ease;
+        }
+
+        .link-card:hover .fa-chevron-left {
+            transform: translateX(-5px);
+            color: #4a5568;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://f.top4top.io/p_38204ehkx0.png" alt="لوجو المتجر" class="logo">
+        
+        <h1 class="store-title">مهاب ستور</h1>
+        <p class="store-desc">اختر من الروابط بالأسفل للتواصل معنا أو متابعة جديدنا</p>
+
+        <div class="links-grid">
+            
+            <a href="https://whatsapp.com/channel/0029VbCns1v0G0XhFt07Ii3R" target="_blank" class="link-card whatsapp-channel">
+                <div class="icon-box">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="link-text">
+                    قناة الاستور على واتساب
+                    <span class="link-subtext">تابع أحدث العروض والتحديثات</span>
+                </div>
+                <i class="fas fa-chevron-left"></i>
+            </a>
+
+            <a href="https://wa.me/201125808758" target="_blank" class="link-card whatsapp-direct">
+                <div class="icon-box">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="link-text">
+                    تواصل معنا مباشرة
+                    <span class="link-subtext">01125808758</span>
+                </div>
+                <i class="fas fa-chevron-left"></i>
+            </a>
+
+            <a href="https://www.facebook.com/share/p/18ifC5kiME/" target="_blank" class="link-card facebook-post">
+                <div class="icon-box">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="link-text">
+                    بوست الضمان والموثوقية
+                    <span class="link-subtext">راجع تقييمات العملاء السابقين</span>
+                </div>
+                <i class="fas fa-chevron-left"></i>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
